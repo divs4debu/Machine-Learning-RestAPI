@@ -1,6 +1,7 @@
 from flask import Flask
 from apis import api
-from werkzeug.contrib.fixers import ProxyFix
+import db
+
 app = Flask(__name__)
 
 api.init_app(app)
